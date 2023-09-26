@@ -23,7 +23,7 @@ def main():
     input_file = st.file_uploader("Upload Source Excel File", type=["xlsx", "xls"])
 
     if input_file is not None:
-        target_file = "target.xlsx"  # Replace with your target Excel file path
+        target_file = "https://docs.google.com/spreadsheets/d/1zHHAie1LS_livTnhGKEEJpsCl5X8tVvB0-0g106jixU/edit#gid=0"  # Replace with your target Excel file path
 
         # Sheet name input
         sheet_name = st.text_input("Enter Sheet Name", "NewSheet")
