@@ -7,7 +7,7 @@ def upload_excel_as_sheet(input_file, target_file, sheet_name):
 
     # Load the target Excel workbook
     target_excel = pd.ExcelWriter(target_file, engine='openpyxl')
-    target_excel.book = target_excel.book
+    #target_excel.book = target_excel.book
 
     # Write the source DataFrame to the target workbook as a new sheet
     source_df.to_excel(target_excel, sheet_name=sheet_name, index=False)
